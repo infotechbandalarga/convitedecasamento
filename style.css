@@ -1,4 +1,8 @@
-body {
+* {
+    box-sizing: border-box; /* Adiciona box-sizing para melhor controle de layout */
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
     background-image: url('fundo-personalizado.jpg'); /* Altere para o caminho da sua imagem de fundo */
     background-size: cover;
@@ -13,10 +17,11 @@ body {
   .envelope-container {
     position: relative;
     cursor: pointer;
+    max-width: 90vw; /* Limita a largura máxima a 90% da largura da tela */
   }
   
   .envelope {
-    width: 400px;
+    width: 100%; /* Faz com que a imagem do envelope ocupe 100% da largura do contêiner */
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -39,12 +44,34 @@ body {
     background-color: #b84a39;
     color: white;
     border: none;
-    padding: 5px;
+    padding: 5px 10px;
     cursor: pointer;
     border-radius: 4px;
+    z-index: 10; /* Garante que o botão fique acima do vídeo */
   }
   
   .close:hover {
     background-color: #a23b34;
+  }
+  
+  video {
+    width: 100%; /* Faz com que o vídeo ocupe 100% da largura do contêiner */
+    max-width: 600px; /* Define uma largura máxima para o vídeo */
+    border-radius: 8px; /* Bordas arredondadas para o vídeo */
+  }
+  
+  /* Media Queries para ajustes em telas menores */
+  @media (max-width: 600px) {
+    .close {
+      padding: 8px; /* Aumenta o padding do botão em telas menores */
+    }
+  
+    .envelope {
+      max-width: 80vw; /* Limita a largura do envelope em telas menores */
+    }
+  
+    video {
+      max-width: 100%; /* Ajusta a largura máxima do vídeo em telas menores */
+    }
   }
   
