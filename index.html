@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite de Casamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="envelope-container" onclick="openEnvelope()">
+    <img src="carta.png" alt="Envelope" class="envelope" id="envelope">
+    <div class="video-container" id="videoContainer" style="display:none;">
+      <button class="close" onclick="closeVideo()">Voltar ao Menu</button>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
