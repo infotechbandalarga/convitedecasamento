@@ -56,7 +56,8 @@
   
   video {
     width: 100%; /* Faz com que o vídeo ocupe 100% da largura do contêiner */
-    max-width: 600px; /* Define uma largura máxima para o vídeo */
+    max-width: 400px; /* Limita a largura máxima do vídeo */
+    height: auto; /* Mantém a proporção do vídeo */
     border-radius: 8px; /* Bordas arredondadas para o vídeo */
   }
   
@@ -71,7 +72,8 @@
     }
   
     video {
-      max-width: 100%; /* Ajusta a largura máxima do vídeo em telas menores */
+      max-width: 90%; /* Ajusta a largura máxima do vídeo em telas menores */
+      max-height: 300px; /* Limita a altura máxima do vídeo em telas menores */
     }
   }
   
