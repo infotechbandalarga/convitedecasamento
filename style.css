@@ -74,4 +74,10 @@
       max-width: 100%; /* Ajusta a largura máxima do vídeo em telas menores */
     }
   }
+
+  body {
+    background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-traditional-solar-purple-hand-drawn-vertical-spring-floral-background-picture-image_1046380.jpg'); /* Substitua pelo seu link */
+    background-size: cover;
+    background-position: center;
+  }
   
