@@ -4,16 +4,16 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-image: url('fundo-personalizado.jpg'); /* Altere para o caminho da sua imagem de fundo */
-    background-size: cover;
-    background-position: center;
+    background-image: url('back.png'); /* Altere para o nome da sua imagem */
+    background-size: cover; /* Ajusta para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
   }
-  
+
   .envelope-container {
     position: relative;
     cursor: pointer;
@@ -75,9 +75,5 @@
     }
   }
 
-  body {
-    background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-traditional-solar-purple-hand-drawn-vertical-spring-floral-background-picture-image_1046380.jpg'); /* Substitua pelo seu link */
-    background-size: cover;
-    background-position: center;
-  }
+
   
