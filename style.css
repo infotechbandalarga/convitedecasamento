@@ -19,6 +19,15 @@
     cursor: pointer;
     max-width: 90vw; /* Limita a largura máxima a 90% da largura da tela */
   }
+
+  .envelope-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px; /* Ajuste o tamanho da fonte conforme preferir */
+    color: #ec8ddd;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
   
   .envelope {
     width: 100%; /* Faz com que a imagem do envelope ocupe 100% da largura do contêiner */
