@@ -1,55 +1,49 @@
 * {
-    box-sizing: border-box; /* Adiciona box-sizing para melhor controle de layout */
+    box-sizing: border-box;
   }
   
   body {
     font-family: 'Arial', sans-serif;
-    background-image: url('back.png'); /* Altere para o nome da sua imagem */
-    background-size: cover; /* Ajusta para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
+    background-image: url('back.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
   }
-
+  
   .envelope-container {
     position: relative;
     cursor: pointer;
-    max-width: 90vw; /* Limita a largura máxima a 90% da largura da tela */
+    max-width: 90vw;
+    text-align: center; /* Centraliza o conteúdo dentro do envelope */
   }
-
-  .envelope-salmo {
-   
-    font-family: 'Satisfy', cursive;
-    font-size: 15px; /* Ajuste o tamanho da fonte conforme preferir */
+  
+  .envelope-mens, .envelope-salmo, .envelope-name {
     color: #ffffff;
     margin-bottom: 10px;
     text-align: center;
-    line-height: 1.2; /* Ajuste do espaçamento entre as linhas */
   }
-
+  
+  .envelope-salmo {
+    font-family: 'Satisfy', cursive;
+    font-size: 15px;
+  }
+  
   .envelope-mens {
     font-family: 'Satisfy', cursive;
-    font-size: 20px; /* Ajuste o tamanho da fonte conforme preferir */
-    color: #ffffff;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 1.2; /* Ajuste do espaçamento entre as linhas */
+    font-size: 20px;
   }
-
+  
   .envelope-name {
     font-family: 'Dancing Script', cursive;
-    font-size: 40px; /* Ajuste o tamanho da fonte conforme preferir */
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 40px;
   }
   
-  
   .envelope {
-    width: 100%; /* Faz com que a imagem do envelope ocupe 100% da largura do contêiner */
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -58,8 +52,35 @@
     transform: scale(1.05);
   }
   
+  /* Estilo dos ícones */
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  
+  .icon span {
+    text-align: center;
+  }
+  
   .video-container {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +96,7 @@
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 4px;
-    z-index: 10; /* Garante que o botão fique acima do vídeo */
+    z-index: 10;
   }
   
   .close:hover {
@@ -83,25 +104,23 @@
   }
   
   video {
-    width: 100%; /* Faz com que o vídeo ocupe 100% da largura do contêiner */
-    max-width: 600px; /* Define uma largura máxima para o vídeo */
-    border-radius: 8px; /* Bordas arredondadas para o vídeo */
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
   }
   
-  /* Media Queries para ajustes em telas menores */
+  /* Ajustes para telas menores */
   @media (max-width: 600px) {
     .close {
-      padding: 8px; /* Aumenta o padding do botão em telas menores */
+      padding: 8px;
     }
   
     .envelope {
-      max-width: 80vw; /* Limita a largura do envelope em telas menores */
+      max-width: 80vw;
     }
   
     video {
-      max-width: 100%; /* Ajusta a largura máxima do vídeo em telas menores */
+      max-width: 100%;
     }
   }
-
-
   
