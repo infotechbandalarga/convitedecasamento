@@ -20,6 +20,14 @@
     max-width: 90vw; /* Limita a largura máxima a 90% da largura da tela */
   }
 
+  .envelope-mens {
+    font-family: 'Satisfy', cursive;
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme preferir */
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .envelope-name {
     font-family: 'Dancing Script', cursive;
     font-size: 40px; /* Ajuste o tamanho da fonte conforme preferir */
