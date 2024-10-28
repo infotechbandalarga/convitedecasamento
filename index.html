@@ -9,28 +9,32 @@
 </head>
 
 <body>
-  <div class="envelope-container" onclick="openEnvelope()">
-    <h2 class="envelope-mens">Foi o Senhor que fez isto, e é coisa maravilhosa aos nossos olhos.</h2>
-    <h1 class="envelope-salmo">Salmo 118:23</h1>
-    <h1 class="envelope-name">Murilo & Julya</h1>
-    <img src="carta.png" alt="Envelope" class="envelope" id="envelope">
-    
-    <!-- Ícones abaixo do envelope -->
-    <div class="icons-container">
-      <a href="link-cerimonia.html" target="_blank" class="icon">
-        <img src="local.png" alt="Local da Cerimônia">
-        <span>Local da Cerimônia</span>
-      </a>
-      <a href="link-lista-presentes.html" target="_blank" class="icon">
-        <img src="icone-presentes.png" alt="Lista de Presentes">
-        <span>Lista de Presentes</span>
-      </a>
-      <a href="link-rsvp.html" target="_blank" class="icon">
-        <img src="icone-rsvp.png" alt="Confirme sua Presença">
-        <span>Confirme sua Presença</span>
-      </a>
+  <div class="envelope-container">
+    <!-- Conteúdo do envelope que aparecerá ao carregar a página -->
+    <div id="envelopeContent">
+      <h2 class="envelope-mens">Foi o Senhor que fez isto, e é coisa maravilhosa aos nossos olhos.</h2>
+      <h1 class="envelope-salmo">Salmo 118:23</h1>
+      <h1 class="envelope-name">Murilo & Julya</h1>
+      <img src="carta.png" alt="Envelope" class="envelope" id="envelope" onclick="openEnvelope()">
+
+      <!-- Ícones abaixo do envelope -->
+      <div class="icons-container">
+        <a href="link-cerimonia.html" target="_blank" class="icon">
+          <img src="local.png" alt="Local da Cerimônia">
+          <span>Local da Cerimônia</span>
+        </a>
+        <a href="link-lista-presentes.html" target="_blank" class="icon">
+          <img src="icone-presentes.png" alt="Lista de Presentes">
+          <span>Lista de Presentes</span>
+        </a>
+        <a href="link-rsvp.html" target="_blank" class="icon">
+          <img src="icone-rsvp.png" alt="Confirme sua Presença">
+          <span>Confirme sua Presença</span>
+        </a>
+      </div>
     </div>
 
+    <!-- Contêiner do vídeo -->
     <div class="video-container" id="videoContainer" style="display:none;">
       <button class="close" onclick="closeVideo()">Voltar ao Menu</button>
       <video controls>

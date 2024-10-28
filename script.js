@@ -1,22 +1,21 @@
 function openEnvelope() {
-    const envelope = document.getElementById('envelope');
-    const videoContainer = document.getElementById('videoContainer');
-  
-    // Esconder o envelope
-    envelope.style.display = 'none';
-  
-    // Mostrar o vídeo
-    videoContainer.style.display = 'flex'; // Manter como 'flex' para centralização
-  }
-  
-  function closeVideo() {
-    const envelope = document.getElementById('envelope');
-    const videoContainer = document.getElementById('videoContainer');
-  
-    // Mostrar o envelope
-    envelope.style.display = 'block';
-  
-    // Esconder o vídeo
-    videoContainer.style.display = 'none';
-  }
-  
+  const envelopeContent = document.getElementById('envelopeContent');
+  const videoContainer = document.getElementById('videoContainer');
+
+  // Esconder o conteúdo do envelope
+  envelopeContent.style.display = 'none';
+
+  // Mostrar o vídeo
+  videoContainer.style.display = 'flex'; // Mantém a centralização
+}
+
+function closeVideo() {
+  const envelopeContent = document.getElementById('envelopeContent');
+  const videoContainer = document.getElementById('videoContainer');
+
+  // Mostrar o conteúdo do envelope
+  envelopeContent.style.display = 'block';
+
+  // Esconder o vídeo
+  videoContainer.style.display = 'none';
+}
