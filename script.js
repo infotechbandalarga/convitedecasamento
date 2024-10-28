@@ -1,21 +1,23 @@
 function openEnvelope() {
-  const envelopeContent = document.getElementById('envelopeContent');
+  const envelope = document.getElementById('envelope');
   const videoContainer = document.getElementById('videoContainer');
+  const invitationVideo = document.getElementById('invitationVideo');
 
-  // Esconder o conteúdo do envelope
-  envelopeContent.style.display = 'none';
-
-  // Mostrar o vídeo
-  videoContainer.style.display = 'flex'; // Mantém a centralização
+  // Esconder o envelope e mostrar o vídeo em tela cheia
+  envelope.style.display = 'none';
+  videoContainer.style.display = 'flex';
+  
+  // Iniciar o vídeo em tela cheia automaticamente
+  invitationVideo.play();
 }
 
 function closeVideo() {
-  const envelopeContent = document.getElementById('envelopeContent');
+  const envelope = document.getElementById('envelope');
   const videoContainer = document.getElementById('videoContainer');
+  const invitationVideo = document.getElementById('invitationVideo');
 
-  // Mostrar o conteúdo do envelope
-  envelopeContent.style.display = 'block';
-
-  // Esconder o vídeo
+  // Parar o vídeo e sair de tela cheia
+  invitationVideo.pause();
   videoContainer.style.display = 'none';
+  envelope.style.display = 'block';
 }
