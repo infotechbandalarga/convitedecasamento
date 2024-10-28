@@ -102,12 +102,15 @@ body {
   }
 
   .back-button {
-    margin-top: 20px; /* Espaço acima do botão */
+    position: absolute; /* Permite posicionar o botão em relação à tela */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
   }
   
   .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 10px; /* Tamanho reduzido */
+    font-size: 12px; /* Tamanho da fonte menor */
     background-color: #b84a39; /* Cor de fundo do botão */
     color: white; /* Cor do texto */
     text-decoration: none; /* Remove o sublinhado */
@@ -117,6 +120,4 @@ body {
   
   .button:hover {
     background-color: #a23b34; /* Cor ao passar o mouse */
-  }
-  
-  
+  }  
